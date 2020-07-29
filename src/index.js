@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Carousel from './carousel';
 import * as serviceWorker from './serviceWorker';
+
+const images =  [
+  'https://i.ibb.co/FzmKjSn/DSCF9450.jpg',
+  'https://i.ibb.co/NC4R6Fv/DSCF9615.jpg',
+  'https://i.ibb.co/cy04yG0/DSCF9661.jpg',
+  'https://i.ibb.co/7YqyKV2/DSCF9670.jpg',
+  'https://i.ibb.co/VLS5WL6/DSCF9660.jpg',
+  'https://i.ibb.co/QcCwrSv/DSCF9470.jpg',
+
+]
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Carousel images={images} />
   </React.StrictMode>,
   document.getElementById('root')
 );
