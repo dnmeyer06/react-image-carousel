@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const ArrowContainer = styled.div`
   display: grid;
+  -ms-grid-rows: auto;
   grid-template-rows: auto;
   align-self: stretch;
   

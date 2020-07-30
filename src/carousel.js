@@ -6,12 +6,15 @@ import Image from './components/images';
 import './components/styledComponents/body.css'
 
 const Carousel = props => {
+  //State Variables
   const {images} = props
   const [state, setState] = useState({
     activeImage: 0
   })
   const { activeImage } = state
 
+
+  //Autoplay Hooks
   const autoPlayRef = useRef()
 
   useEffect(() => {
@@ -29,6 +32,8 @@ const Carousel = props => {
     return () => clearInterval(interval);
   }, [])
 
+
+  //Image shift methods
   const nextImage = () =>
     setState({
       ...state,
