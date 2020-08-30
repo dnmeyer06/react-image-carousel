@@ -9,4 +9,4 @@ const CarouselContainer = styled.div`
   justify-items: stretch;
 `;
 
-export default CarouselContainer
+export default CarouselContainer;
