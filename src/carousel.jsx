@@ -53,7 +53,7 @@ const Carousel = ({ slideImages }) => {
 };
 
 Carousel.propTypes = {
-  slideImages: PropTypes.arrayOf.isRequired,
+  slideImages: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Carousel;
