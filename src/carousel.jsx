@@ -42,12 +42,12 @@ const Carousel = ({ slideImages }) => {
   }, []);
 
   return (
-    <CarouselContainer>
+    <CarouselContainer data-testid="carousel-container">
       <CarouselArrow handleClick={prevImage} direction="left" />
       {slideImages.map((images, index) => (
         <Image key={images} content={images} activeImage={activeImage} index={index} />
       ))}
-      <CarouselArrow handleClick={nextImage} direction="right" />
+      <CarouselArrow handleClick={nextImage} direction="right" data-testid="right-arrow" />
     </CarouselContainer>
   );
 };

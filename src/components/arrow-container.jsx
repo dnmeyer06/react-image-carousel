@@ -5,7 +5,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import ArrowContainer from './styledComponents/styled-arrow-container';
 
 const CarouselArrow = ({ handleClick, direction }) => (
-  <ArrowContainer onClick={handleClick} direction={direction}>
+  <ArrowContainer onClick={handleClick} direction={direction} data-testid={`${direction}-arrow`}>
     <div>
       <FontAwesomeIcon icon={direction === 'left' ? faChevronLeft : faChevronRight} />
       <span className="fa fa-2x" />
